@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap");
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	align-items: center;
+	background: #d8aa96;
+	display: grid;
+	font-family: "Montserrat", sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	/* height: 100vh; */
+	justify-items: center;
+	/* width: 100vw; */
+}
+
+.signup-container {
+	grid-template-areas: "left right";
+	max-width: 900px;
+}
+
+.left-container {
+	background: #807182;
+	overflow: hidden;
+	text-align: center;
+	height: 70px;
+}
+
+.left-container h1 {
+	color: rgb(248 199 194);
+	font-size: 30px;
+	position: relative;
+}
+
+.left-container h1 div {
+	display: inline;
+	position: relative;
+	top: 10px;
+}
+
+.left-container h1 div:nth-child(2) {
+	position: relative;
+	top: 5px;
+}
+
+.left-container h1 div:nth-child(2) span {
+	font-style: italic;
+}
+
+.left-container h1 i {
+	background: #dc8e86;
+	border-radius: 50%;
+	color: #807182;
+	font-size: 6px;
+	margin-right: 3px;
+	padding: 2px;
+	transform: rotate(-45deg);
+}
+
+.left-container img {
+	width: 8%;
+	transform: rotate(20deg);
+}
+
+.right-container {
+	background: #f9c7c2;
+	display: grid;
+	grid-template-areas: "." ".";
+	width: 100%;
+}
+
+.right-container h1:nth-of-type(1) {
+	color: rgba(0, 0, 0, 0.8);
+	font-size: 28px;
+	font-weight: 600;
+}
+
+.right-container .set {
+	justify-content: space-between;
+	margin: 10px 0;
+	text-align: right;
+}
+
+.right-container label {
+	color: rgba(0, 0, 0, 0.8);
+	border-radius: 50%;
+	margin: 10px;
+}
+
+.right-container header {
+	padding: 25px 40px;
+}
+
+.right-container footer {
+	align-items: center;
+	background: #fff;
+	display: grid;
+	padding: 5px 40px;
+	display: none;
+}
+
+.right-container footer button {
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	height: 38px;
+	line-height: 38px;
+	width: 100px;
+	border-radius: 19px;
+	font-family: "Montserrat", sans-serif;
+}
+
+.right-container footer #back {
+	background: #fff;
+	transition: 0.2s all ease-in-out;
+}
+
+.right-container footer #back:hover {
+	background: #171a2b;
+	color: white;
+}
+
+.right-container footer #submit {
+	background: #807182;
+	border: 1px solid transparent;
+	color: #fff;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.right-container footer #submit:hover {
+	background: #171a2b;
+}
+
+.pets-name label, .pets-breed label, .pets-birthday label, .pets-gender label, .pets-spayed-neutered label, .pets-weight label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.radio-container {
+	background: #fff;
+	border: 1px solid #e2847b;
+	border-radius: 10px;
+	display: inline-block;
+	padding: 3px;
+}
+
+.radio-container label {
+	background: transparent;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	display: inline-block;
+	height: 35px;
+	line-height: 35px;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	transition: 0.2s all ease-in-out;
+	width: 120px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.radio-container input[type="radio"] {
+	display: none;
+}
+
+.radio-container input[type="radio"]:checked+label {
+	background: #f7b1ab;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.postal-selector input {
+	margin: 0;
+	padding: 0;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.dhl {
+	background-image: url(./images/dhl.png);
+}
+
+.fedex {
+	background-image: url(./images/fedex.png);
+}
+
+.ups {
+	background-image: url(./images/ups.png);
+}
+
+.usps {
+	background-image: url(./images/usps.png);
+}
+
+.postal-selector input:active+.drinkcard-cc {
+	opacity: .9;
+	box-shadow: 1px 2px 5px #666;
+}
+
+.postal-selector input:checked+.drinkcard-cc {
+	-webkit-filter: none;
+	-moz-filter: none;
+	filter: none;
+	box-shadow: 3px 3px 5px #333;
+}
+
+.drinkcard-cc {
+	cursor: pointer;
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: inline-block;
+	width: 85px;
+	height: 85px;
+	-webkit-transition: all 100ms ease-in;
+	-moz-transition: all 100ms ease-in;
+	transition: all 100ms ease-in;
+	-webkit-filter: brightness(1.8) grayscale(1) opacity(.7);
+	-moz-filter: brightness(1.8) grayscale(1) opacity(.7);
+	filter: brightness(1.8) grayscale(1) opacity(.7);
+}
+
+.drinkcard-cc:hover {
+	-webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+	-moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+	filter: brightness(1.2) grayscale(.5) opacity(.9);
+}
+
+textarea {
+	width: 450px;
+	height: 100px;
+	resize: none;
+	font-size: 14px;
+	padding: 15px;
+	box-shadow: 5px 5px 5px #666;
+	border: 1px solid #e69c9c;
+	border-radius: 10px;
+}
+
+.postal-selector-input {
+	-webkit-transition: height .3s ease;
+	height: 0;
+	overflow: hidden;
+}
+
+#errorMsg {
+	display: none;
+	color: #dc0000;
+    position: absolute;
+    margin-top: 10px;
+    font-size: 12px;
+    font-style: italic;
+}
+
+@-webkit-keyframes blinker {
+	from {
+		opacity: 1.0;
+	}
+	to {
+		opacity: 0.0;
+	}
+}
+
+.blink {
+	text-decoration: blink;
+	-webkit-animation-name: blinker;
+	-webkit-animation-duration: 1.3s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-direction: alternate;
+}

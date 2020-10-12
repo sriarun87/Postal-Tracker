@@ -1,0 +1,49 @@
+<html>
+
+	<head>
+		<script type="text/javascript" src="common.js"></script>
+		<link rel="stylesheet" type="text/css" href="common.css">
+		</link>
+		<script>
+			window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) }; ga.l = +new Date;
+			ga('create', 'UA-180255039-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+		<script async src='https://www.google-analytics.com/analytics.js'></script>
+	</head>
+
+	<body>
+		<div class='signup-container'>
+			<div class='left-container'>
+				<h1>
+					<div><i class='fas fa-paw'><img src="images/track.svg" /></i></div>
+					<div>POSTAL <span>Tracker</span></div>
+				</h1>
+			</div>
+			<div class='right-container'>
+				<header>
+					<div class="postal-selector">
+						<input id="dhl" type="radio" name="postal-org" value="dhl" />
+						<label class="drinkcard-cc dhl" for="dhl"></label>
+						<input id="fedex" type="radio" name="postal-org" value="fedex" />
+						<label class="drinkcard-cc fedex" for="fedex"></label>
+						<input id="ups" type="radio" name="postal-org" value="ups" />
+						<label class="drinkcard-cc ups" for="ups"></label>
+						<input id="usps" type="radio" name="postal-org" value="usps" />
+						<label class="drinkcard-cc usps" for="usps"></label>
+					</div>
+					<div class="postal-selector-input">
+						<textarea class="m-top-10" id="inputTxt"></textarea>
+						<div id="errorMsg" class="blink">... have your tracking number before try!!!</div>
+					</div>
+				</header>
+				<footer>
+					<div class='set'>
+						<button id="submit">Track It!</button>
+					</div>
+				</footer>
+			</div>
+		</div>
+	</body>
+
+</html>
