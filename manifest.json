@@ -3,7 +3,7 @@
 
     "name": "POSTAL Tracker",
     "description": "Select carrier to track the package",
-    "version": "1.0",
+    "version": "1.0.1",
 
     "icons": {
         "16": "icon16.png",
