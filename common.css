@@ -87,11 +87,11 @@ body {
 .right-container label {
 	color: rgba(0, 0, 0, 0.8);
 	border-radius: 50%;
-	margin: 10px;
+	margin: 10px 9px;
 }
 
 .right-container header {
-	padding: 25px 40px;
+	padding: 25px 35px;
 }
 
 .right-container footer {
@@ -229,7 +229,7 @@ body {
 }
 
 textarea {
-	width: 450px;
+	width: 400px;
 	height: 100px;
 	resize: none;
 	font-size: 15px;

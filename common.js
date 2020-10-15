@@ -27,7 +27,8 @@ document.addEventListener(
 			function() {
 				try {
 					if (document.getElementById('inputTxt').value) {
-						chrome.tabs.create({ url: getCarrierUrl(CARRIER, document.getElementById('inputTxt').value) });
+						const trackingId = document.getElementById('inputTxt').value.split(/[\n, ]+/).join(',');
+						chrome.tabs.create({ url: getCarrierUrl(CARRIER, trackingId) });
 					} else {
 						// error handler
 						document.getElementById('errorMsg').style.display = 'block';
