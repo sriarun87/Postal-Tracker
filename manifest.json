@@ -3,7 +3,7 @@
 
     "name": "POSTAL Tracker",
     "description": "Select carrier to track the package",
-    "version": "1.0.2",
+    "version": "1.0.4",
 
     "icons": {
         "16": "icon16.png",
@@ -17,6 +17,10 @@
     },
 
     "permissions": [
-	 "activeTab"
-	]
+        "activeTab",
+        "https://www.googletagmanager.com/gtag/js",
+        "https://www.google-analytics.com/analytics.js"
+      ],
+    
+      "content_security_policy": "script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com; object-src 'self'"
 }

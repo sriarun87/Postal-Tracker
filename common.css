@@ -8,18 +8,16 @@
 body {
 	align-items: center;
 	background: #d8aa96;
-	display: grid;
 	font-family: "Montserrat", sans-serif;
 	font-size: 14px;
 	font-weight: 400;
-	/* height: 100vh; */
 	justify-items: center;
-	/* width: 100vw; */
 }
 
 .signup-container {
 	grid-template-areas: "left right";
 	max-width: 900px;
+	width: 470px;
 }
 
 .left-container {

@@ -40,6 +40,9 @@ document.addEventListener(
 			},
 			false
 		);
+
+		// loads google analytics scripts
+		loadScript();
 	},
 	false
 );
@@ -65,3 +68,18 @@ const getCarrierUrl = (carrier, trackingId) => {
 	}
 	return url;
 };
+
+function gtag() {
+	dataLayer.push(arguments);
+  }
+  
+  function loadScript() {
+	var scriptTag = document.createElement("script");
+	scriptTag.src = "https://www.googletagmanager.com/gtag/js?id=UA-102573905-2";
+	scriptTag.async = true;
+	document.querySelector("head").append(scriptTag);
+  
+	window.dataLayer = window.dataLayer || [];
+	gtag("js", new Date());
+	gtag("config", "UA-102573905-2");
+  }
